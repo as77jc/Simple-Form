@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #404040;
+}
+
+/* //////////////////////
+    Typograpgy
+/////////////////////  */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 200;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+h1 + p {
+    color: #F18119;
+    font-size: 1.3125rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+strong {
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #F18119;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: .635rem;
+    color: #F18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fine-print {
+    font-size: 0.635rem;
+    letter-spacing: 1px;
+    
+}
+
+/* //////////////////////
+    intro
+/////////////////////  */
+
+.intro {
+    background-color: #404040;
+    background-image: url(/images/ribs.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 0 .25em 1.2em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+.top-text {
+    order: -1;
+    margin: 0 auto 2em;
+    padding-top: .6 em;
+    border-top: .8em solid #F18119;
+    border-image: linear-gradient(to left, #FF713B, #FFA51D) 1;
+}
+
+/* //////////////////////
+    main content
+/////////////////////  */
+
+.main-content {
+    margin: 2em 1em;
+    
+}
+
+/* //////////////////////
+    form
+/////////////////////  */
+
+.email-form {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input,
+.btn {
+    width: 100%;
+    text-align: center; 
+    border-radius: 7px; 
+}
+
+input {
+    margin: .4em 0;
+    padding: .5em;
+    border: 1px solid #404040;
+    transition: 0.5s;
+}
+
+input:focus {
+    transform: scale(1.1)
+}
+
+.btn {
+    padding: 1em 1.5em;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    border: none;
+    background-image: linear-gradient(to left, #FF713B, #FFA51D);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #000;
+    transform: scale(1.1)
+}
+
+
+/* //////////////////////
+    media queries
+/////////////////////  */
+
+@media (min-width: 650px) {
+    body {
+        display: flex;
+        justify-content: space-between;
+        
+        max-width: 1000px;
+        margin: 0 auto;
+        
+        min-height: 100vh;
+        
+        font-size: 1.125rem; 
+    }
+    
+    .intro {
+        width: 60%;
+    }
+    
+    .main-content {
+       width: 35%; 
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        margin: 1rem 0 0;
+    }
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }  
+}
